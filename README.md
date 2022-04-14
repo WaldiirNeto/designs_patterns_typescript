@@ -1,2 +1,2 @@
-# designs_patterns_typescript
-tirando uma onda com desing patterns
+# Desings patterns com typescript
+sentiu falta de uma? manda um pull request aí.
