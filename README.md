@@ -1,2 +1,2 @@
 # designs_patterns_typescript
-tirando uma onda com desong patterns
+tirando uma onda com desing patterns
