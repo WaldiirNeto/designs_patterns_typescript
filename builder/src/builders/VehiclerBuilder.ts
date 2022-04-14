@@ -1,0 +1,38 @@
+import Engine from "../components/Engine";
+import Vehicle from "../components/products/Vehicle";
+import Transmission from "../components/Transmission";
+import VehicleType from "../components/VehicleType";
+import  Wheel  from "../components/Wheel";
+import IBuilder from "./IBuilder";
+
+export default class Vehiclebuilder implements IBuilder {
+
+    private vehicle = new Vehicle();
+
+    reset(): void {
+        this.vehicle = new Vehicle();
+    }
+    getVehicle(): Vehicle {
+        const result: Vehicle = this.vehicle
+        this.reset()
+       return result
+    }
+    addWheel(wheel: Wheel) {
+        this.vehicle.addWheel(wheel)
+    }
+    setVehicleType(value: VehicleType) {
+        this.vehicle.vehicleType = value
+    }
+    SetSeats(seats: number) {
+       this.vehicle.seats = seats
+    }
+    setEngine(engine: Engine) {
+        this.vehicle.engine = engine
+
+    }
+    setTransmission(transmission: Transmission) {
+        this.vehicle.transmission = transmission
+
+    }
+
+}
